@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <title>Train Scheduler</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+</head>
+<body>
+        <div class="container">
+            <div class="jumbotron" style = "background-color: rgb(29, 117, 248); color: white; text-align: center">
+                <h1 class="display-4" >Any Time is Train Time</h1>
+                <h3>Choo Choo Chee Chee</h3>
+            </div> 
+        </div>
+        <!-- Train Schedule Table -->
+        <div class="container">
+        <div class= "card-header" style="background-color: rgb(29, 117, 248); color: white">
+                <strong>Current Train Schedule</strong>
+        </div>
+        <div class= "card-body">
+        <div class = "row">
+        <div class="col-sm">
+        <table class="table" id = "train-table">
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (Min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minute Away</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="train-name">Hogwarts Express</td>
+                <td id="train-destination">Hogsmeade</td>
+                <td id="train-frequency">45</td>
+                <td id="arrival-time">3:30 PM</td>
+                <td id="minutes-away">10</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+    <!-- Form  to add train -->
+
+    <!-- <div class="row"> -->
+    <!-- <div class="col-md-12"> -->
+    <div class="card mb-4">
+    <div class= "card-header" style="background-color: rgb(29, 117, 248); color: white">
+            <strong>Add Train</strong>
+    </div>
+    <div class= "card-body">
+        <form role="form">
+            <div class="form-group">
+                <label for="train-name-form">Train Name</label>
+                <input type="text" class="form-control" id="train-name-form" placeholder="Hogwarts Express">
+            </div>
+            <div class="form-group">
+                <label for="train-dest-form">Destination</label>
+                <input type="text" class="form-control" id="train-dest-form" placeholder="Hogsmeade">
+            </div>
+            <div class="form-group">
+                <label for="train-time-form">First Train Time (HH:mm military time)</label>
+                <input type="time" class="form-control" id="train-time-form" placeholder="12:00">
+            </div>
+            <div class="form-group">
+                <label for="train-freq-form">Frequency (min)</label>
+                <input type="number" class="form-control" id="train-freq-form" placeholder="45">
+            </div>
+            <button class="btn btn-primary" id="add-train">Submit</button>
+        </form>           
+    </div>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="logic.js">
+    </script>
+</body>
+</html>
