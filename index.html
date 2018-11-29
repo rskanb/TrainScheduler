@@ -10,7 +10,7 @@
 </head>
 <body>
         <div class="container">
-            <div class="jumbotron" style = "background-color: rgb(54, 9, 9); color: white; text-align: center">
+            <div class="jumbotron" style = "background-color: rgb(122, 52, 24); color: white; text-align: center">
                 <h1 class="display-6" >Any Time is Train Time</h1>
                 <h3>Choo Choo Chee Chee</h3>
             </div> 
@@ -66,7 +66,7 @@
                 <input type="text" class="form-control" id="train-dest-form" placeholder="Hogsmeade">
             </div>
             <div class="form-group">
-                <label for="train-time-form">First Train Time (HH:mm military time)</label>
+                <label for="train-time-form">First Train Time (HH:mm)</label>
                 <input type="time" class="form-control" id="train-time-form" placeholder="12:00">
             </div>
             <div class="form-group">
@@ -74,8 +74,19 @@
                 <input type="number" class="form-control" id="train-freq-form" placeholder="45">
             </div>
             <button class="btn btn-primary" id="add-train">Submit</button>
+            
         </form>           
     </div>
+    </div>
+    <div class="card mb-4">
+        <div class= "card-header" style="background-color: rgb(248, 110, 31); color: white">
+            <strong>Empty Train Table</strong>
+        </div>
+        <div class= "card-body">
+            <form role="form">
+                <button class="btn btn-danger" id="remove-train">Click to Reset Train Table Above</button>
+            </form>           
+        </div>
     </div>
     <!-- </div> -->
     <!-- </div> -->
